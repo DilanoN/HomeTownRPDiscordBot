@@ -251,7 +251,7 @@ exports.start = function(SETUP) {
   bot.on('ready',() => {
     log(LOG_LEVELS.INFO,'Started...');
     // bot.user.setGame('Roofstad', 'https://www.twitch.tv/RoqueTV');
-    bot.user.setActivity('HomeTown Roleplay',{'url':'https://discord.gg/Ffc6TmnYDa','type':'ONLINE'});
+    bot.user.setActivity('HomeTown Roleplay',{'url':'','type':'STREAM'});
     bot.generateInvite(['ADMINISTRATOR']).then((link) => {
       log(LOG_LEVELS.INFO,`Invite URL - ${link}`);
     }).catch(null);
