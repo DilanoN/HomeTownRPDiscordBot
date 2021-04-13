@@ -1,2 +1,1 @@
-worker: node bot.js
-heroku scale worker=1
+worker: node index.js
