@@ -158,11 +158,11 @@ exports.start = function(SETUP) {
   const UpdateEmbed = function() {
     let dot = TICK_N % 2 === 0 ? 'Roofstad' : 'Roleplay';
     let embed = new Discord.RichEmbed()
-    .setAuthor("HomeTown Roleplay Server Status", "https://cdn.discordapp.com/attachments/580680574369398794/582249284825776148/logo_vinity_end.png")
-    .setColor(0x2894C2)
-    .setFooter(TICK_N % 2 === 0 ? '⚪ HomeTown Roleplay' : '⚫ HomeTown Roleplay')
+    .setAuthor("🔋| HomeTown Roleplay Status", "https://i.imgur.com/4G5ILhL.png")
+    .setColor(2123412)
+    .setFooter(TICK_N % 2 === 0 ? '🖤 HomeTown Roleplay' : '🤍 HomeTown Roleplay')
     .setTimestamp(new Date())
-    .addField('\n\u200b\nHoe kan je de server joinen?','Je kan de server joinen doormiddel van **HomeTown Roleplay.nl** in te voeren bij Direct Connect. Onderaan staat de server status om te kijken hoeveel mensen er online zijn en in de wachtrij staan. Dit systeem is gemaakt door [Douile](https://github.com/Douile/)\n\u200b\n',false)
+    .addField('\n\u200b\nHoe kan ik de server joinen?','Je kan de server joinen door middel van in de server lijst intypen HomeTown Roleplay of door in F8 connect htrp.vibegames.pro in te typen.\n\u200b\n',false)
     if (STATUS !== undefined)
     {
       embed.addField(':warning: Actuele server status:',`${STATUS}\n\u200b\n`);
@@ -251,7 +251,7 @@ exports.start = function(SETUP) {
   bot.on('ready',() => {
     log(LOG_LEVELS.INFO,'Started...');
     // bot.user.setGame('Roofstad', 'https://www.twitch.tv/RoqueTV');
-    bot.user.setActivity('HomeTown Roleplay',{'url':'','type':'STREAM'});
+    bot.user.setActivity('HomeTown Roleplay',{'url':'discord.gg/BVKqs8mJ','type':'STREAMING'});
     bot.generateInvite(['ADMINISTRATOR']).then((link) => {
       log(LOG_LEVELS.INFO,`Invite URL - ${link}`);
     }).catch(null);
